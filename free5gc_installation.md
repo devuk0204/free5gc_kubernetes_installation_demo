@@ -9,7 +9,7 @@
 
 | Host  name | vCPU | RAM | HDD | Network Interface|
 | --- | --- | --- | --- | --- |
-| free5gc-master | 4 vCPU | 8GB | 100GB | Don't care |
+| free5gc-master | 4 vCPU | 8GB | 100GB | At least 1 Interface |
 | free5gc-cp | 4 vCPU | 16GB | 100GB | 1 Interface |
 | free5gc-up | 4 vCPU | 8GB | 100GB | 1 Interface |
 | free5gc-an | 4 vCPU | 8GB | 100GB | 1 Interface |
