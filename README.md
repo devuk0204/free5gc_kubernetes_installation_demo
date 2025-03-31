@@ -1,1 +1,1 @@
-###[Installation_guide](free5gc_installation.md)
+[Installation_guide](free5gc_installation.md)
