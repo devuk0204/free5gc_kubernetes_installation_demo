@@ -294,25 +294,36 @@ cd free5gc/charts
 
 sed -i 's|affinity: {}|\
   affinity:\
-      nodeAffinity:\
-        requiredDuringSchedulingIgnoredDuringExecution:\
-          nodeSelectorTerms:\
-          - matchExpressions:\
-            - key: kubernetes.io/hostname\
-              operator: In\
-              values: \
-              - free5gc-cp|' free5gc-amf/values.yaml free5gc-ausf/values.yaml free5gc-dbpython/values.yaml free5gc-n3iwf/values.yaml free5gc-nrf/values.yaml free5gc-nssf/values.yaml free5gc-pcf/values.yaml free5gc-smf/values.yaml free5gc-udm/values.yaml free5gc-udr/values.yaml free5gc-webui/values.yaml 
+    nodeAffinity:\
+      requiredDuringSchedulingIgnoredDuringExecution:\
+        nodeSelectorTerms:\
+        - matchExpressions:\
+          - key: kubernetes.io/hostname\
+            operator: In\
+            values: \
+            - free5gc-cp|' free5gc-amf/values.yaml free5gc-ausf/values.yaml free5gc-dbpython/values.yaml free5gc-n3iwf/values.yaml free5gc-nrf/values.yaml free5gc-nssf/values.yaml free5gc-pcf/values.yaml free5gc-smf/values.yaml free5gc-udm/values.yaml free5gc-udr/values.yaml free5gc-webui/values.yaml 
    
 sed -i 's|affinity: {}|\
   affinity:\
-      nodeAffinity:\
-        requiredDuringSchedulingIgnoredDuringExecution:\
-          nodeSelectorTerms:\
-          - matchExpressions:\
-            - key: kubernetes.io/hostname\
-              operator: In\
-              values: \
-              - free5gc-up|' free5gc-upf/values.yaml 
+    nodeAffinity:\
+      requiredDuringSchedulingIgnoredDuringExecution:\
+        nodeSelectorTerms:\
+        - matchExpressions:\
+          - key: kubernetes.io/hostname\
+            operator: In\
+            values: \
+            - free5gc-up|' free5gc-upf/values.yaml
+
+sed -i 's|affinity: {}|\
+  affinity:\
+    nodeAffinity:\
+      requiredDuringSchedulingIgnoredDuringExecution:\
+        nodeSelectorTerms:\
+        - matchExpressions:\
+          - key: kubernetes.io/hostname\
+            operator: In\
+            values: \
+            - free5gc-an|' ueransim/values.yaml 
 
 
 # deploy upf
